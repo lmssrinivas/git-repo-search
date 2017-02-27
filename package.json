@@ -1,0 +1,12 @@
+{
+  "name": "es-test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "server.js",
+  "repository": {},
+  "author": "srinivas",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}

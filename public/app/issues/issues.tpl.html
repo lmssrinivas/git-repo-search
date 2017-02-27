@@ -1,0 +1,17 @@
+<button ui-sref="repos">Back</button>
+
+<div>
+
+   <h1> {{vm.repo.name}}</h1>
+    <p>Author {{vm.repo.owner.login}}</p>
+
+
+</div>
+<div ng-if="!vm.issues">
+    NO issues found
+</div>
+<div ng-repeat="issue in vm.issues" ng-if="vm.issues">
+    <div>
+        Issue {{$index}} {{issue.title}}
+    </div>
+</div>

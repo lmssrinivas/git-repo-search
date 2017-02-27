@@ -1,0 +1,22 @@
+
+<div>
+    <button ui-sref="home">Back</button>
+    <ul>
+        <li ng-repeat="repo in vm.repos">
+            <div class="row" ui-sref="issues({repo : repo.name,repos : repo})">
+                <div class="col-md-6">
+                    <div>
+                        {{repo.name}}
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        {{repo.description}}
+                    </div>
+                </div>
+
+            </div>
+        </li>
+    </ul>
+</div>
