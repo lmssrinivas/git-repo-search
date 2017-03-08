@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "test",
   "main": "server.js",
+  "scripts":{
+    "postinstall":"npm install bower && bower install",
+    "start":"node server.js"
+  },
   "repository": {},
   "author": "srinivas",
   "license": "MIT",
