@@ -1,21 +1,12 @@
-
 <div>
-    <button ui-sref="home">Back</button>
-    <ul>
-        <li ng-repeat="repo in vm.repos">
+    <button class="btn btn-primary" ui-sref="home">Back</button>
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="repo in vm.repos">
             <div class="row" ui-sref="issues({repo : repo.name,repos : repo})">
-                <div class="col-md-6">
-                    <div>
-                        {{repo.name}}
-                    </div>
-
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        {{repo.description}}
-                    </div>
-                </div>
-
+                <a class="col-md-6" href="">
+                    <div class="col-md-6">{{repo.name}}</div>
+                    <div class="col-md-6"> {{repo.description}}</div>
+                </a>
             </div>
         </li>
     </ul>

@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "test",
   "main": "server.js",
-  "scripts":{
-    "postinstall":"npm install bower && bower install",
-    "start":"node server.js"
+  "scripts": {
+    "postinstall": "npm install bower && bower install",
+    "start": "node server.js"
   },
   "repository": {},
   "author": "srinivas",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
     "express": "^4.14.1"
   }
 }
