@@ -18,9 +18,13 @@ app.engine('html',ejs.renderFile);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}))
+
 app.listen(port,function (req,res) {
-    console.log('request received');
+    console.log('Server is running on port : '+ port);
 })
+
+
+app.use('/sms',require('./server/sms/route'));
 
 app.use('/',function(req,res,next){
     res.render('index.html');

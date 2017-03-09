@@ -24,10 +24,8 @@ app.factory('gitService',function ($http,$q) {
 
             return $http.get(searchRepo).then(
                 function success(data) {
-                    console.log(data);
                     return data;
                 },function error(error) {
-                    console.log(error);
                     return error
                 }
             )
