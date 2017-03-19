@@ -1,3 +1,3 @@
 # git-repo-search
 
-Sample demo app - http://gitsearch-srinvias.rhcloud.com/
+Sample demo app - https://git-apis.herokuapp.com/
